@@ -1,0 +1,839 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-image 1s;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(background/bg-1\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.nav-bar {
+    display: flex;
+    border-radius: 20px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px 20px;
+    background-color: rgb(219, 219, 219);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.logo span {
+    color: rgb(170, 15, 46);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: inline-flex;
+
+}
+
+nav ul li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+nav img {
+    display: none;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    margin: auto;
+    top: 10px;
+    background: rgb(170, 15, 46);
+    display: block;
+    transition: .7s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin: 15% auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    margin-bottom: 30px;
+}
+
+.header-title h1 {
+    color: rgb(233, 232, 232);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2.9rem;
+}
+
+.small-p-text {
+    margin-bottom: 30px;
+}
+
+.small-p-text p {
+    color: rgb(231, 229, 229);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.header-btns {
+    margin-top: 7%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-1 {
+    margin: 0 40px;
+}
+
+.btn-1 button {
+    padding: 10px 40px;
+    background-color: rgb(236, 73, 23);
+    color: darkgray;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    transition: .6s;
+}
+
+.btn-1 button:hover {
+    background: transparent;
+
+}
+
+.btn-2 button {
+    padding: 10px 40px;
+    background: transparent;
+    color: chartreuse;
+    border-radius: 10px;
+    border: 1px solid chartreuse;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+/*-------Service Container-----------*/
+
+
+
+
+
+
+.service-container {
+    background-color: rgb(228, 223, 223);
+}
+
+
+.text-col {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.text-col h1 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-top: 40px;
+}
+
+.text-col h1::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: rgb(170, 15, 46);
+    display: block;
+    margin: auto;
+}
+
+.text-col h2 {
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(68, 42, 139);
+
+}
+
+.text-col span {
+    color: crimson;
+}
+
+.text-col p {
+    margin-bottom: 50px;
+}
+
+.traning-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3px;
+    margin: auto;
+}
+
+.section1 {
+    text-align: center;
+}
+
+.images img {
+    border-radius: 10px 0 10px 0;
+    margin-bottom: 20px;
+    transition: transform .5s;
+
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+.p2-text {
+    margin-bottom: 30px;
+}
+
+.p2-text h2 {
+    color: rgb(68, 42, 139);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.p2-text p {
+    color: black;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.p2-text p:hover {
+    color: blue;
+}
+
+
+
+
+
+/*------------------Gym Centers----------*/
+
+
+
+
+
+#gym-centers {
+    background-color: rgb(255, 255, 255);
+}
+
+.center-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin: 10px 20px;
+    
+}
+
+.images-2 {
+    flex-basis: 30%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.images-2 img {
+    width: 100%;
+    outline: none;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    margin-bottom: 130px;
+
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+    font-size: 2.3rem;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.center-text h1::after {
+    content: "";
+    width: 150px;
+    height: 4px;
+    background: rgb(170, 15, 46);
+    display: block;
+    margin: 10px auto;
+}
+
+.center-text p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-size: 17px;
+    color: rgb(34, 73, 16);
+    margin-bottom: 40px;
+}
+
+.center-text p:hover {
+    color: crimson;
+    transition: .6s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(32, 32, 32, 0.4), #a06275);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.5s;
+    color: #fff;
+}
+
+.images-2:hover .layer {
+    height: 100%;
+}
+
+.images-2 p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#training-sessions {
+    background-color: lightyellow;
+
+}
+
+.traineers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+}
+
+.title {
+    padding-top: 70px;
+}
+
+.title h1 {
+    margin-bottom: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title h1::after {
+    content: "";
+    width: 250px;
+    height: 4px;
+    background: rgb(170, 15, 46);
+    display: block;
+    margin: 10px auto;
+}
+
+.col-4 {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.col-4 h1 {
+    color: rgb(30, 92, 92);
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.col-4 p {
+    color: black;
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin-bottom: 50px;
+}
+
+.btn a {
+    padding: 10px 40px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border-radius: 10px 0 10px 0;
+    border: 1px solid rgb(255, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn a:hover {
+    transition: .6s;
+    background: black;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.col-3 {
+    margin-top: 30px;
+
+}
+
+.col-3 img {
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+
+/*---------- footer-------------*/
+
+
+
+
+
+.get-access {
+    margin: auto;
+    background-color: lightyellow;
+}
+
+.inner {
+    padding: 40px 20px 40px 20px;
+    background-color: hsla(219, 33%, 14%, 0.979);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    bottom: -70px;
+
+}
+
+.title1 {
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.inner p {
+    color: darkgray;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.input {
+    margin-left: 15px;
+}
+
+.input input {
+    padding: 10px 100px;
+    border-radius: 20px;
+    text-align: left;
+    border: none;
+}
+
+.input input ::placeholder {
+    color: rgb(146, 145, 144);
+}
+
+.btn-3 {
+    border: none;
+    display: block;
+    margin-left: 10px;
+
+}
+
+.btn-3 button:hover {
+    border-radius: 40px;
+    background-color: coral;
+    transition: 0.7s;
+}
+
+.btn-3 button {
+    padding: 10px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(228, 226, 226);
+    background-color: rgb(11, 160, 160);
+}
+
+.footer-inner {
+    background-color: hsl(216, 53%, 9%);
+    padding: 2% 2%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+.logo-container {
+    margin-left: 40px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-txt-1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-txt-1 p {
+    color: darkgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.contact-us {
+    margin-top: 65px;
+    margin-left: 100px;
+}
+
+.call {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.call span {
+    margin-left: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+.call a{
+    text-decoration: none;
+
+}
+
+.menu-links {
+    margin-left: 100px;
+    margin-top: 90px;
+}
+
+.menu-links p {
+    color: darkgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-links-2 {
+    margin-left: 60px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.menu-links-2 p {
+    color: darkgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logo-2 h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+    color: #fff;
+}
+
+.logo-2 span {
+    color: rgb(170, 15, 46);
+}
+
+
+
+
+/*----------bg- attached---------*/
+
+
+
+
+.bg-attached {
+    width: 100%;
+    height: 60%;
+    background-image: url(background/bg-1\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+
+}
+
+.cop {
+    padding: 0 0 330px 0;
+}
+
+.bg-attached {
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    width: 350px;
+    position: absolute;
+    top: 95px;
+    right: -350px;
+    transition: right 1s;
+}
+
+.info h1 {
+    color: chartreuse;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.info h5 {
+    color: rgb(192, 188, 189);
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.info h4 {
+    color: chartreuse;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-attached h2 {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bg-attached span {
+    color: rgb(0, 247, 41);
+}
+
+.bg-attached p {
+    color: aliceblue;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.cop1 {
+    margin-bottom: 50px;
+}
+
+.cop1 button {
+    padding: 10px 45px;
+    background-color: rgba(22, 175, 43, 0.808);
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+}
+
+.cop1 button:hover {
+    background: transparent;
+    transition: .6s;
+}
+
+.p2-text button {
+    padding: 10px 45px;
+    background-color: rgba(68, 68, 54, 0.808);
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.p2-text button:hover {
+    background: black;
+    transition: .6s;
+}
+
+/*-------------Login Styles--------------*/
+
+
+.login-container {
+    margin: 5% auto;
+    
+}
+
+.login-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 420px;
+    padding: 10px 10px;
+    width: 300px;
+    margin: auto;
+    background: transparent;
+}
+
+.login h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 20px auto 10px auto;
+
+
+}
+
+.login h3 {
+    color: darkgray;
+    font-family: sans-serif;
+    text-align: left;
+    font-size: 16px;
+}
+
+.login input {
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: none;
+    padding-left: 10px;
+}
+
+.login .sign-up {
+    width: 100%;
+    background-color: coral;
+    text-align: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.login .sign-up:hover {
+    background-color: rgb(235, 133, 97);
+    transition: .6s;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    .header{
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    
+    .images-2 img{
+        width: 100%;
+        
+       
+    }
+    .images-2{
+        width: auto; 
+    }
+    
+    .images img{
+        width: 100%;
+
+    }
+    .tarining-img{
+        display: flex;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .service-container {
+        display: grid;
+        
+    }
+    .info{
+        width: 340px;
+        
+    }
+    .tarineers{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+}

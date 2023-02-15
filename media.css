@@ -1,0 +1,298 @@
+@media only screen and (max-width: 700px) {
+
+    .header {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(families/gym-membership-questions-fb1.jpg);
+    }
+
+    .login-container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+
+    .nav-bar {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding: 25px 10px;
+        border-radius: 0;
+        flex-wrap: wrap;
+
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 100vh;
+        padding-top: 10px;
+        top: 67px;
+        right: -200px;
+        overflow: hidden;
+        background-color: rgb(219, 219, 219);
+        transition: right .6s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 15px auto 10px auto;
+
+    }
+
+    nav ul li::after {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        color: red;
+    }
+
+    .header-title h1 {
+        font-size: 34px;
+        text-align: center;
+        padding-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    .small-p-text p {
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .header-text {
+        flex-wrap: wrap;
+        min-width: auto;
+    }
+
+    .header-btns {
+        margin: 70px 30px 0px auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-1 button {
+        padding: 10px 30px;
+    }
+
+    .btn-2 button {
+        padding: 10px 30px;
+    }
+
+    #training-sessions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tarineers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .title h1::after {
+        width: 150px;
+    }
+
+    .title1 {
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .inner p {
+        font-size: 9px;
+        color: aliceblue;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+
+    }
+
+    .inner {
+        display: none;
+    }
+
+    .input input {
+        padding: 7px 20px;
+        border-radius: 10px;
+    }
+
+    .btn-3 a {
+        padding: 7px 18px;
+    }
+
+    .wide {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+
+    .logo-container {
+        margin-top: 20px;
+        margin-left: 15px;
+        padding-bottom: 40px;
+    }
+
+    .logo-2 {
+        margin-top: 30px;
+    }
+
+    .footer-txt-1 p {
+        margin-top: 7px;
+        margin-bottom: 5px;
+    }
+
+    .contact-us {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .menu-links {
+        margin-left: 40px;
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .menu-links p {
+        margin: 0px 8px;
+    }
+
+    .menu-links-2 {
+        margin-left: 20px;
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .menu-links-2 p {
+        margin: 0px 10px;
+    }
+
+    #span {
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .title h1 {
+        font-size: 23px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    /*---------gym centers--------*/
+
+    .center-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .center-text h1::after {
+        width: 80px;
+    }
+
+    .center-text p {
+        font-size: 14px;
+    }
+
+    /*--------info----------*/
+    .slide {
+        align-items: centers;
+    }
+
+    .info {
+        width: 200px;
+        flex-wrap: wrap;
+        background-color: rgb(29, 52, 53);
+        padding: 20px;
+        top: 60px;
+    }
+
+    .info h1 {
+        font-size: 20px;
+    }
+
+    .info h5 {
+        font-size: 12px;
+    }
+
+    .info h2 {
+        font-size: 16px;
+    }
+
+    #slide-btn {
+        padding: 10px 20px;
+    }
+
+    .bg-attached {
+        padding-left: 10px;
+    }
+
+    .bg-attached h2 {
+        font-size: 17px;
+
+    }
+
+    .bg-attached p {
+        text-align: left;
+        color: rgba(6, 201, 94, 0.658);
+        font-size: 18px;
+    }
+
+    .cop1 {
+        margin-left: 0px;
+    }
+
+    /*-----------training with friends------*/
+
+    #training-sessions {
+        background-color: lightyellow;
+    }
+
+    /*------training section-----*/
+
+    .images {
+        width: 400px;
+        margin: auto;
+        
+    }
+
+    .images img {
+        width: 100%;
+        
+    }
+
+}
